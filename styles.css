@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffe3e3;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.love-button, .buy-button {
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.love-button:hover, .buy-button:hover {
+  background-color: #ff4a3b;
+}
+
+.love-button:active {
+  background-color: #b22222; /* Темно-красный цвет */
+}
+
+.counter {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.shop {
+  margin-top: 30px;
+}
+
+.inventory {
+  margin-top: 15px;
+  font-size: 20px;
+}
