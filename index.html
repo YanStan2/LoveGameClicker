@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Любов до Насті</title>
     <link rel="stylesheet" href="styles.css">
@@ -9,20 +9,30 @@
 <body>
     <div class="container">
         <h1>Я люблю Настю!</h1>
-        <div class="counter">Кількість любові: <span id="loveCount">0</span></div>
-        <div class="counter">Вартість одного кліку: <span id="clickValueDisplay">1</span></div>
-        <div class="counter">Загальна генерація любові: <span id="totalLoveGeneration">0</span> в секунду</div>
+        <div class="counter">
+            Кількість любові: <span id="loveCount">0</span>
+        </div>
+        <div class="counter">
+            Вартість одного кліку: <span id="clickValueDisplay">1</span>
+        </div>
+        <div class="counter">
+            Загальна генерація любові: <span id="totalLoveGeneration">0</span> в секунду
+        </div>
         <button class="love-button" onclick="loveNastya()">Любити Настю</button>
 
         <div class="shop">
             <h2>Магазин</h2>
-            <button class="buy-button" onclick="buyLoveGun()">Купити Маленький Любвемет (200 любові)</button>
-            <div class="inventory">Маленьких Любвеметів: <span id="loveGuns">0</span></div>
-            <div class="counter">Генерує: <span id="loveGunRate">1</span> любові/сек</div>
+            <div class="item-card">
+                <button class="buy-button" onclick="buyLoveGun()">Купити Маленький Любвемет (<span id="loveGunCost">200</span> любові)</button>
+                <div class="inventory">Маленьких Любвеметів: <span id="loveGuns">0</span></div>
+                <div class="counter">Генерує: <span id="loveGunRate">1</span> любові/сек</div>
+            </div>
 
-            <button class="buy-button" onclick="buyLoveCannon()">Купити Сердечно-любящий Няшкомет (1000 любові)</button>
-            <div class="inventory">Сердечно-любящих Няшкометів: <span id="loveCannons">0</span></div>
-            <div class="counter">Генерує: <span id="loveCannonRate">2</span> любові/сек</div>
+            <div class="item-card">
+                <button class="buy-button" onclick="buyLoveCannon()">Купити Сердечно-любящий Няшкомет (<span id="loveCannonCost">1000</span> любові)</button>
+                <div class="inventory">Сердечно-любящих Няшкометів: <span id="loveCannons">0</span></div>
+                <div class="counter">Генерує: <span id="loveCannonRate">2</span> любові/сек</div>
+            </div>
         </div>
     </div>
 

@@ -3,49 +3,68 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #ffe3e3;
+  background-color: #f8d4d4;
   font-family: Arial, sans-serif;
   color: #333;
 }
 
 .container {
   text-align: center;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ff6f61;
+}
+
+.counter {
+  margin: 10px 0;
+  font-size: 1.2em;
 }
 
 .love-button, .buy-button {
   background-color: #ff6f61;
   color: #fff;
   border: none;
-  padding: 15px 30px;
-  font-size: 20px;
+  padding: 15px 20px;
+  font-size: 1.2em;
   cursor: pointer;
   border-radius: 10px;
-  margin-top: 20px;
-  transition: background-color 0.3s;
+  margin: 10px 0;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .love-button:hover, .buy-button:hover {
-  background-color: #ff4a3b;
+  background-color: #e65c54;
+  transform: translateY(-3px);
 }
 
-.love-button:active {
-  background-color: #b22222; /* Темно-красный цвет */
-}
-
-.counter {
+.item-card {
+  background-color: #ffe3e3;
+  padding: 15px;
+  border-radius: 15px;
   margin-top: 20px;
-  font-size: 24px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-.shop {
-  margin-top: 30px;
+.item-card .inventory, .item-card .counter {
+  font-size: 1em;
+  margin-top: 10px;
 }
 
-.inventory {
-  margin-top: 15px;
-  font-size: 20px;
+.item-card button.buy-button {
+  margin-top: 10px;
+  background-color: #ff8a65;
+  padding: 10px 15px;
+}
+
+.item-card button.buy-button:hover {
+  background-color: #ff7043;
 }
